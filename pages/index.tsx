@@ -1,5 +1,5 @@
-import Mountains from '../components/Mountains';
+import Mixamo from '../components/Mixamo';
 
 export default function Home() {
-  return <Mountains />
+  return <Mixamo />
 }

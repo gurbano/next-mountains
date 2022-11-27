@@ -24,7 +24,7 @@ function Box(props: any) {
         onClick={(event) => click(!clicked)}
         onPointerOver={(event) => hover(true)}
         onPointerOut={(event) => hover(false)}>
-        <boxGeometry args={[1, 1, 1]} />
+        <boxGeometry args={[.5, .5, .5]} />
         <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
       </mesh>
     </>
@@ -32,13 +32,16 @@ function Box(props: any) {
 }
 
 const Mountains = () => (
-<Canvas>
-  <ambientLight />
-  <pointLight position={[10, 10, 10]} />
-  <Box position={[-3.2, 0, 0]} />
-  <Box position={[3.2, 0, 0]} />
-  <Box position={[0, 3.2, 0]} />
-  <Box position={[0, -3.2, 0]} />
-</Canvas>);
+  <div className={'CanvasWrapper'}>
+    <Canvas>
+      <ambientLight />
+      <pointLight position={[10, 10, 10]} />
+      <Box position={[-1.2, 0, 0]} />
+      <Box position={[1.2, 0, 0]} />
+      <Box position={[0, 1.2, 0]} />
+      <Box position={[0, -1.2, 0]} />
+    </Canvas>
+  </div>
+);
 
 export default Mountains
