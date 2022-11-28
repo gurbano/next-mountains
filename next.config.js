@@ -32,8 +32,8 @@ const nextConfig = {
           name: 'mountains',
           filename: 'static/chunks/remoteEntry.js',
           exposes: {
-           './Mountains': './components/Mountains',
-            './Dancer': './components/Mixamo',
+           './RemoteButton': './components/RemoteButton',
+           './Dancer': './components/Mixamo',
           },
         }),
       );
